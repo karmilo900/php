@@ -45,7 +45,7 @@ foreach($aprendices as $fi=> $valor){
 }
 */
 $totaless=0;
-$numeros= array('n1' => 2,'n2' => 3,'n3' => 2,'n4' => 2,'n5' => 2, );
+$numeros= array('n1' => 2,'n2' => 5,'n3' => 2,'n4' => 2,'n5' => 2, );
 foreach($numeros as $a=> $valores){
 
 	

@@ -7,5 +7,22 @@ $dia[4]="friday";
 $dia[5]="fsaturday";
 $dia[6]="sunday";
 
-echo $dia[1];
+
+echo "<br>";
+
+
+$autos = array("Marza","Tesla","Lamborgini","Chevrolet","Corvette");
+$total= count($autos);
+
+echo "las marcas de carros son: ";
+for ($i=0; $i < $total; $i++) { 
+	
+	if ($i == $total-1) {
+		echo $autos[$i].". ";
+	}else if($i < $total){
+		echo $autos[$i].", ";
+	}
+}
+
+
 ?>

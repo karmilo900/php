@@ -19,4 +19,6 @@ echo "<br>";
 $totaltodo=$Promedionotas+$PromedioExamen+$PromedioTrabajo;
 
 echo "el total de sus notas es de: ".$totaltodo;
+
+if
 ?>

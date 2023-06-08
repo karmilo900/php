@@ -3,7 +3,7 @@ class Empleado{
 	private $nombresem;
 	private $sueldosem;
 
-	public function iniciars($nomem,$suee){
+	public function __construct($nomem,$suee){
 		$this->nombresem=$nomem;
 		$this->sueldosem=$suee;
 	}
@@ -20,11 +20,11 @@ class Empleado{
 		}
 	}
 }
-$empleado1=new Empleado();
-$empleado1->iniciars("camilo",3500000);
+$empleado1=new Empleado("camilo",3500000);
+
 $empleado1->impuestos();
 
-$empleado2=new Empleado();
-$empleado2->iniciars("juan",1500000);
+$empleado2=new Empleado("juan",1500000);
+
 $empleado2->impuestos();
 ?>

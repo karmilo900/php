@@ -1,7 +1,11 @@
 <?php
+
+ 
+ 
 class operaciones{
+	
 	private $valor1;
-	private $valor2;
+	 private$valor2;
 	
 
 
@@ -26,8 +30,15 @@ class operaciones{
 		$total = $this->valor2 / $this->valor1 ;
 		echo "el total de la division es: ".$total;
 	}
+	public function raiz(){
+		$total =sqrt($this->valor2);
+		$total2=sqrt($this->valor1);
+		echo "la raiz cuadrada de los numeros es: ".$total. " y ".$total2;
+	}
 }
-$suma1 =new operaciones(2,5);
+ $valores1=$_POST['valor1'];
+ $valores2=$_POST['valor2'];
+$suma1 =new operaciones($valores1,$valores2);
 echo "<br>";
 $suma1->suma();
 echo "<br>";
@@ -36,6 +47,8 @@ echo "<br>";
 $suma1->multiplicacion();
 echo "<br>";
 $suma1->division();
+echo "<br>";
+$suma1->raiz();
 
 
 ?>
